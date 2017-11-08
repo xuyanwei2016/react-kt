@@ -5,7 +5,7 @@ import Home from './containers/Home';
 import Lesson from './containers/Lesson';
 import Profile from './containers/Profile';
 import App from './containers/App';
-import store from '../redux/store';
+import store from './redux/store';
 window._store=store;
 import {Provider} from 'react-redux';
 import './common/index.less';
