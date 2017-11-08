@@ -17,3 +17,7 @@ let sliders=require('./mock/slider');
 app.get('/slider',function(req,res){
     res.json(sliders)
 });
+let lessonList=require('./mock/lessonList')
+app.get('/lessonlist/:type/:limit/:offset',function (req,res) {
+    res.json(lessonList)
+})

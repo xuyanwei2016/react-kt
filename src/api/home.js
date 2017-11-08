@@ -6,4 +6,7 @@ let url='http://localhost:3001';
 //获取轮播图
 export const getSliders=()=>{
     return get(url+'/slider');
+};
+export const getLessons=(type,offset,limit)=>{
+    return get(url+`/lessonlist/${type}/${offset}/${limit}`)
 }
