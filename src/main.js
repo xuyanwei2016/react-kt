@@ -10,6 +10,8 @@ import Detail from './containers/Detail';
 window._store=store;
 import {Provider} from 'react-redux';
 import './common/index.less';
+import Login from "./containers/Login";
+import Reg from "./containers/Reg/index";
 ReactDOM.render(<Provider store={store}>
         <Router>
             <App>
@@ -18,6 +20,9 @@ ReactDOM.render(<Provider store={store}>
                     <Route path={'/lesson'} component={Lesson}/>
                     <Route path={'/profile'} component={Profile}/>
                     <Route path={'/detail'} component={Detail}/>
+                    <Route path={'/login'} component={Login}/>
+                    <Route path={'/'} component={Reg}/>
+
                 </Switch>
             </App>
         </Router>
